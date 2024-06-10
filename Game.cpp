@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+	string result[] = { "You Win !\n","You Lose\n","It's a Tie\n","------------------\n"};
 	srand(time(NULL));
 	int choice;
 	int prob;
@@ -22,35 +23,53 @@ int main() {
 			switch (prob) {
 			case 1:
 				if (choice == 1) {
-					cout << "Again !\n";
+					cout << result[3];
+					cout << result[2];
+					cout << result[3];
 				}
 				else if (choice == 2) {
-					cout << "You Win !!\n";
+					cout << result[3];
+					cout << result[0];
+					cout << result[3];
 				}
 				else if (choice == 3) {
-					cout << "You Lose\n";
+					cout << result[3];
+					cout << result[1];
+					cout << result[3];
 				}
 				break;
 			case 2:
 				if (choice == 1) {
-					cout << "You lose !\n";
+					cout << result[3];
+					cout << result[1];
+					cout << result[3];
 				}
 				else if (choice == 2) {
-					cout << "Again !\n";
+					cout << result[3];
+					cout << result[2];
+					cout << result[3];
 				}
 				else if (choice == 3) {
-					cout << "You Win\n";
+					cout << result[3];
+					cout << result[0];
+					cout << result[3];
 				}
 				break;
 			case 3:
 				if (choice == 1) {
-					cout << "You Win!\n";
+					cout << result[3];
+					cout << result[0];
+					cout << result[3];
 				}
 				else if (choice == 2) {
-					cout << "You Lose\n";
+					cout << result[3];
+					cout << result[1];
+					cout << result[3];
 				}
 				else if (choice == 3) {
-					cout << "Again!\n";
+					cout << result[3];
+					cout << result[2];
+					cout << result[3];
 				}
 				break;
 			default:
