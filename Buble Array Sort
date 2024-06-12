@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void main() {
+	int num[]{11,52,9,2,8,3,7,4,6,5};
+	int temp;
+	int size = sizeof(num) / sizeof(int);
+	cout << "------------------------------\n";
+
+	for (int elements : num) {
+		cout << elements << " " ;
+	}
+	cout << '\n' << "------------------------------\n";
+
+
+	for (int i = 0; i < size - 1; i++) {
+		for (int j=0; j < size - 1;j++) {
+			if (num[j] > num[j + 1]) {
+				temp = num[j];
+				num[j] = num[j + 1];
+				num[j + 1] = temp;
+			}
+			cout << "itteration j : " << j << ", Array : " << num[i] << endl;
+		}
+		cout << '\n' << "itteration i : " << i << ", Array : " << num[i] << '\n' << endl;
+	}
+	cout << "------------------------------\n";
+	for (int element : num) {
+		cout << element <<" ";
+
+	}
+	cout << '\n' <<"------------------------------\n";
+
+}
