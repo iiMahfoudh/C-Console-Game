@@ -6,6 +6,7 @@ auto max(T x,U y){  // Set The return type to be auto , Set Argument with the ne
     return (x>y) ? x : y;   /* Returning max value by ternarry opperator */
 }
 int main(){
-    cout << max(4.5,2); // calling the function with setting up arguments
+    cout << max('a',2); // calling the function with setting up arguments // For Now 'a' is a char with present 97 in dec while 2 is integer!
+                        // and the template function accept both data types and works
     return 0;
 }
