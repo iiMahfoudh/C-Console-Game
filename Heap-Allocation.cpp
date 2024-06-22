@@ -13,6 +13,6 @@ int main(){
     for(int i=0;i<x;i++){
         cout << pNum[i] << " ";
     }
-    delete pNum; // Delete Heap-Memory used by the pointer to not leak memory
+    delete[] pNum; // Delete Heap-Memory used by the pointer to not leak memory
     return 0;
 }
