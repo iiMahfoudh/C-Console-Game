@@ -7,7 +7,7 @@ struct cars{               // Creating A Struct Nammed "cars"
     string color;
     int year;
 };
-void printcar(cars carx){   // Creating a function nammed "printcar" and passing carx in cars datatype
+void printcar(cars carx){   // Creating a function nammed "printcar" and passing carx in cars datatype // You Could pass by reference by using printcar(cars &carx).
         cout << carx.model << endl; //printing out classes for the called argument.
         cout << carx.brand << endl;
         cout << carx.color << endl;
@@ -25,6 +25,6 @@ int main(){
         car2.brand = "Toyota";
         car2.color = "Black";
         car2.year = 2023;
-        printcar(car1); // Calling printing function passing car1
+        printcar(car1); // Calling printing function passing car1 
     return 0;
 }
