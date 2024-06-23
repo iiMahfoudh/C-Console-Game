@@ -19,8 +19,8 @@ class son:public father{ // Derived Class : inherited from the base class
 int main(){         // OUR MAIN Function
     son object1;  // Creating Object in the Derived Class
     cout << "** From The Derived Class: " <<object1.c << "\n** From PUBLIC basse Class: " << object1.a << "\n** From private in base class using GETTER Function: " << object1.GetB() <<endl;
-    /*         Object1 accessing attribute c from his derived class             Object1 accessing attribute a from base class             Object1 accessing attribute b from private 
-                                                                                                                                                base class using GETTER Function GETB()
+    /*                  Object1 accessing attribute c from his derived class             Object1 accessing attribute a from base class             Object1 accessing attribute b from private 
+                                                                                                                                                     base class using GETTER Function GETB()
    */
    return 0;
 }
