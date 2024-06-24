@@ -15,7 +15,7 @@ void main() {
 
 
 	for (int i = 0; i < size - 1; i++) { // int a counter
-		for (int j=0; j < size - 1;j++) { // int auther counter
+		for (int j=0; j < size - 1;j++) { // int other counter
 			if (num[j] > num[j + 1]) { // switch sign to increase or decrease
 				temp = num[j]; // memoire
 				num[j] = num[j + 1]; // switching sides
