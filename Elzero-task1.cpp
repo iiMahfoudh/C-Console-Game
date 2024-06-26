@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    // This Console app consumes 4*3=12 bytes or 2*3=6 bytes
+    // This Console app consumes 4*3=12 bytes
     int kilo_byte;
     int byte = kilo_byte * 1024;
     int bits = byte * 8;
