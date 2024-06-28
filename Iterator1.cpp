@@ -56,3 +56,18 @@ int main()
 
   return 0;
 }
+------------------------------------------------------------------------------------------------------------
+#include <iostream>
+#include <vector> // including a container, this case a vector.
+using namespace std;
+
+int main(){ 
+  vector<int> numbers = {999,1,2,3,4,5,6,7,8,9}; //Creating vector container nammed "numbers" and asigning values.
+  vector<int>::iterator it = numbers.begin();  //Creatting an iterator nammed "it" that point to 'numbers.begin()' address memory.
+  cout << *it << endl;  // Using astrisks to derefrence and address to a value.
+
+  auto ite = numbers.begin(); //Creating an AUTO-type variable that point to 'numbers.begin()' memory address.
+  cout << *ite << endl; //Accessing the value by derefrecing the pointer.
+
+  return 0;
+}
