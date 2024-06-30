@@ -10,7 +10,7 @@ int main()
 {
   int *ptr1; // Wild Pointer
   int *ptr2 = NULL;
-  int *ptr3 = nullptr;
+  int *ptr3 = nullptr; //Modern c++
 
   cout << ptr1 << "\n"; // Garbage Value
   cout << ptr2 << "\n"; // 0
